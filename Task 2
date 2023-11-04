@@ -1,0 +1,38 @@
+#fun for addition
+def add(n1,n2):
+    return n1+n2
+
+#fun for subtraction
+def sub(n1,n2):
+    return n1-n2
+
+#fun for multiplication
+def mul(n1,n2):
+    return n1*n2
+
+#fun for Division
+def div(n1,n2):
+    return n1/n2
+
+print("1-Addition \n2-Subtraction \n3-Multiplication \n4-Division")
+print("Choose a option from 1,2,3,4:")
+
+#Take users choise
+choice=int(input())
+
+#Take numbers as input from user
+num1=int(input("Enter first number"))
+num2=int(input("Enter second number"))
+
+
+if choice==1:
+    print(num1,"+",num2,"=",add(num1,num2))
+
+elif choice==2:
+    print(num1,"-",num2,"=",sub(num1,num2))
+
+elif choice==3:
+    print(num1,"*",num2,"=",mul(num1,num2))
+
+else:
+    print(num1,"/",num2,"=",div(num1,num2))
